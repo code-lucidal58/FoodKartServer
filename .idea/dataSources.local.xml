@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails FoodKart: production" uuid="9a76194f-ade3-4663-bd59-9653db3bd6dc">
+      <user-name>FoodKart</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfecdfe5dfe5dfeedfe1dfebdff8dffedff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails FoodKart: test" uuid="f5412e90-3265-46e6-96df-bf08f4a1a9f5">
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails FoodKart: development" uuid="793ed64f-f8fb-4d0d-8296-148ccb17f74f">
+      <user-name>root</user-name>
+      <schema-pattern>foodkart_development.*</schema-pattern>
+      <default-schemas>foodkart_development.*</default-schemas>
+    </data-source>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+                    Prefix Verb   URI Pattern                           Controller#Action
+                     users GET    /users(.:format)                      users#index {:format=>"json"}
+                           POST   /users(.:format)                      users#create {:format=>"json"}
+                           PUT    /users(.:format)                      users#update {:format=>"json"}
+                           DELETE /users(.:format)                      users#destroy {:format=>"json"}
+               users_login POST   /users/login(.:format)                users#login {:format=>"json"}
+              users_logout GET    /users/logout(.:format)               users#logout {:format=>"json"}
+                    orders GET    /orders(.:format)                     orders#index {:format=>"json"}
+                           POST   /orders(.:format)                     orders#create {:format=>"json"}
+                           DELETE /orders/:id(.:format)                 orders#destroy {:format=>"json"}
+    orders_restaurant_list GET    /orders/restaurant_list(.:format)     orders#restaurant_list {:format=>"json"}
+  orders_restaurant_orders POST   /orders/restaurant_orders(.:format)   orders#restaurant_orders {:format=>"json"}
+                  requests GET    /requests(.:format)                   requests#index {:format=>"json"}
+                           POST   /requests(.:format)                   requests#create {:format=>"json"}
+                           PUT    /requests/:id(.:format)               requests#update {:format=>"json"}
+requests_retrieve_requests POST   /requests/retrieve_requests(.:format) requests#retrieve_requests {:format=>"json"}

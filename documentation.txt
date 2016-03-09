@@ -1,0 +1,32 @@
+To create new order,send #### post '/users'
+	=> access_token in header
+	=> {"order":{"restaurant":"Shahi darbar","item":"Paneer,Dal","quantity":"2,3","price":"80,34","order_date": "any_string","min_cost":"150","tot_cost":"2345"}}
+	=> you will receive
+
+To create new user i.e. signup  #### get '/users'
+	=> {"user":{"name":"asdf","email":"asdf@b.c","phone":"1234567","gender":"f","password":"asEnteredByUser","dob":"12-23-34"}}
+	=> you will receive
+	{"success":true,"error":null,"access_token":"b8b9d0c762018e6260dffa9d07fd80b4f2d1a389"}
+
+To logout #### get '/users/logout'
+	=>you will receive {"success":true,"error":null} on successfull logout
+
+To login #### post '/users/login'
+	=> you need to send:
+		{"email":"asdf@b.c","password":"asEnteredByUser"}
+	=> you will get:
+		{"success":true,"access_token":"d0c98e189991090195feefd86599d2bafbc8a6e9"} on successful login
+		{"success":false,"error":"password does not match","access_token":null} if password does not match
+		{"success":false,"error":"email id does not exist","access_token":null} if email id does not exist
+
+to update user #### put '/users/update'
+	=> you will need to send:
+		{"order":{"restaurant":"Shahi darbar","item":"Paneer,Dal","quantity":"2,3","price":"80,34","order_date": "any_string","min_cost":"150","tot_cost":"2345"}}
+	=> you will receive:
+		{"success":true,"error":"null"} 
+	=> same format if there is any error
+
+To delete user  #### delete '/users'
+	=> {"success":true,"error":null} if successful
+	=> {"success":false,"error":"user does not exist"} if not successful
+
