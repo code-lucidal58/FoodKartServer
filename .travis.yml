@@ -6,4 +6,4 @@ deploy:
   app: foodkart
   domain: jazzyarchitect
   on:
-    repo: code-lucidal58/FoodKartServer 
+    repo: code-lucidal58/FoodKartServer
